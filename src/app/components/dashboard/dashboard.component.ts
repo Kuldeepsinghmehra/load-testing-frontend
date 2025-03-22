@@ -162,7 +162,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.apiService.getAvailableServers().subscribe({
       next: (types) => {
         this.serverTypes = types;
-        console.log('Available server types:', types);
+        console.log('Availabe Servers:', types);
       },
       error: (error) => {
         console.error('Error fetching server types:', error);
